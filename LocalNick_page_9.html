@@ -1,0 +1,110 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/2ca82aa2a8.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="localnicks.js"></script>
+    <script type="text/javascript">
+        window.onbeforeunload = function(){
+            document.getElementById("tour_cost").value = "$00.00";
+        }
+    </script>
+</head>
+<body>
+	
+	<header class="whenwhite">
+	  		<img src="images/LocalNick_White.png" width="45">
+	</header>
+	<div id="body2">
+		<div class="container">
+			<div class="content2">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 heading heading2">
+					Tour Cost
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-xs-6 body_content body_content2">
+					Time to figure out what to charge. Its up to you! If you need help visit our cost guide page.
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-xs-3" style="margin-left:38%;margin-top: 60px;">
+					<form>
+						<div>
+							<input type="text" id="tour_cost" name="tourCost" value="$00.00" class="input2" readonly="readonly">
+						</div>
+					</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-xs-3" style="margin-left:38%;margin-top: 40px;">
+						<div class="col-md-4 col-xs-4">
+                            <button type="button" class="button2" value="1" onclick="addCost('1');">1</button>
+						</div>
+						<div class="col-md-4 col-xs-4">
+                            <button type="button" class="button2" value="2" onclick="addCost('2');">2</button>
+						</div>
+						<div class="col-md-4 col-xs-4">
+                            <button type="button" class="button2" value="3" onclick="addCost('3');">3</button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-xs-3" style="margin-left:38%;">
+						<div class="col-md-4 col-xs-4">
+                            <button type="button" class="button2" value="4" onclick="addCost('4');">4</button>
+						</div>
+						<div class="col-md-4 col-xs-4">
+                            <button type="button" class="button2" value="5" onclick="addCost('5');">5</button>
+						</div>
+						<div class="col-md-4 col-xs-4">
+                            <button type="button" class="button2" value="6" onclick="addCost('6');">6</button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-xs-3" style="margin-left:38%;">
+						<div class="col-md-4 col-xs-4">
+                            <button type="button" class="button2" value="7" onclick="addCost('7');">7</button>
+						</div>
+						<div class="col-md-4 col-xs-4">
+                            <button type="button" class="button2" value="8" onclick="addCost('8');">8</button>
+						</div>
+						<div class="col-md-4 col-xs-4">
+                            <button type="button" class="button2" value="9" onclick="addCost('9');">9</button>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-xs-3" style="margin-left:38%;">
+                        <div class="col-md-4 col-xs-4">
+                            <button type="button" class="button2" value="." onclick="addCost('.');">.</button>
+						</div>
+                        <div class="col-md-4 col-xs-4">
+                            <button type="button" class="button2" value="0" onclick="addCost('0');">0</button>
+                        </div>
+                        <div class="col-md-4 col-xs-4">
+                            <button type="button" class="button2" onclick="backSpace()">
+                                <i class="fa fa-chevron-circle-left" aria-hidden="true" style="margin-top:5px;"></i>
+                            </button>
+						</div>      
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-xs-6 btn-func">
+					<button type="button" class="save2">SAVE & EXIT</button>
+					<button type="button" class="next2">NEXT</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

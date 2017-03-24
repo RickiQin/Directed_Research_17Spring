@@ -1,0 +1,69 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="localnicks.js" ></script>
+    <script type="text/javascript">
+        window.onbeforeunload = function(){
+            document.getElementById("spot1").value = "";
+            document.getElementById("spot2").value = "";
+        }
+    </script>
+</head>
+<body>
+	
+	<header>
+	  		<img src="images/tln_logo.png" width="55px">
+	</header>
+	<div id="body">
+		<div class="container">
+			<div class="content">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 heading">
+					Spot Descriptions
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-xs-6 body_content">
+					Now that we know where you are going lets give them an idea of what you will be doing.
+					</div>
+				</div>
+				<div class="row" style="margin-top:8%;">
+                    <div class="col-md-3 col-xs-3"></div>
+					<div class="col-md-6 col-xs-6" style="margin-left:2%;">
+                        <div>
+                            <div class="qtitle">Surfing Lesson</div> <!-- spot1_name -->
+                            <form class="suggest">
+                                <div>
+                                    <span id="text1">Please tell us your idea...</span><input type="text" id="spot1" name="spot1_detail" class="p8npt" maxlength="120" onkeyup="countSpot('spot1', 'count1');" onkeydown="countSpot('spot1', 'count1');">
+                                </div>
+                            </form>
+                            <div class="nocount"><span id="count1">0</span>/120</div>
+                        </div>
+                        <div style="margin-top:2%;">
+                            <div class="qtitle">Lunch on the beach</div> <!-- spot2_name -->
+                            <form class="suggest">
+                                <div>
+                                    <span id="text2">Please tell us your idea...</span><input type="text" id="spot2" name="spot2_detail" class="p8npt" maxlength="120" onkeyup="countSpot('spot2', 'count2');" onkeydown="countSpot('spot2', 'count2');">
+                                </div>
+                            </form>
+                            <div class="nocount"><span id="count2">0</span>/120</div>
+                        </div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-xs-6 btn-func">
+					<button type="button" class="save">SAVE & EXIT</button>
+					<button type="button" class="next">NEXT</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

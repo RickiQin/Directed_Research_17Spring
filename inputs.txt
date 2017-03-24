@@ -1,0 +1,14 @@
+
+Page_8
+/GET
+spot1_name (String)
+spot2_name (String)
+
+/POST
+spot1_detail (String)
+spot2_detail (String)
+
+Page_9
+/GET
+
+/POST
